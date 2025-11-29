@@ -24,5 +24,11 @@ displayVehicles(vehicles);
 form.reset();
 };
  function displayVehicles(data) {
-    
+    let card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = 
+    <h3>${v.name}</h3>
+    <p>Type: ${v.type}</p>
+    <p>capacity: ${v.capacity}</p>
+    <p>availability: ${v.availability}</p>
  }
