@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Login page</h1>
-    <from id ="login from">
+    <h1>Login</h1>
+    <from id ="login">
         <label for ="email">email:</label>
         <input type ="email" id="email" name = "enter your email" required>
         <br>
@@ -16,6 +16,20 @@
         <br>
         <button type = "submit">login</button>
     </from>
-    
+    <script>
+        function login(){
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let validEmail = "admin@gmail.com";
+            let validPassword = "admin1234";
+            if(email === validEmail && password === validPassword){
+                alert("Login successful");
+                window.location.href = "admin.html"; 
+            } else {
+                alert("Wrong email or password");
+            }
+        }
+    </script>
 </body>
 </html>
