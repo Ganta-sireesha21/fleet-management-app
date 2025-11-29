@@ -31,4 +31,12 @@ form.reset();
     <p>Type: ${v.type}</p>
     <p>capacity: ${v.capacity}</p>
     <p>availability: ${v.availability}</p>
+    vehiclelist.appendChild(card);
  }
+ function deleteVehicle(id) {
+    vehicles = vehicles.filter(v=> v.id !== id);
+    displayVehicles(vehicles);
+ }
+ filterType.addEventListener("change", () =>{
+    
+ })
