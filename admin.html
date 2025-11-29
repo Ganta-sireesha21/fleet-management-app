@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>fleet management dashboard</h1>
+    <form id="vehical">
+        <!-- <label for ="vehical-id">vehical-id:</label> -->
+        <input type ="text" id ="name" name="vehicle name" required>
+        <input type = text id ="type" name ="type (car/truck/bike)" required>
+        <input type = "number" id ="capacity" name = "capacity" required>
+        <select id ="avaliable">
+            <option value = "Available">Available</option>
+            <option value = "Unavailable">Unavailable</option>
+        </select>
+        <button type = "submit">Add Fleet</button>
+    </form>
+    <select id ="filterType">
+        <option value="">Filter bt Type</option>
+        <option value="car">car</option>
+        <option value="truck">truck</option>
+        <option value ="bike">bike</option>
+    </select>
+    <div id ="vehiclelist"></div>
+</body>
+</html>
